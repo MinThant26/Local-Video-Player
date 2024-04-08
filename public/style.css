@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    max-width: 670px;
+    margin: 20px 0;
+}
+.container .videoPlayerContainer{
+    width: 100%;
+}
+.videoPlayerContainer .videoPlayer{
+    width: 100%;
+    margin: 10px 0;
+}
+.container .videoList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.videoList .card{
+    padding: 10px;
+    background-color: rgb(225, 225, 225);
+    opacity: .5;
+    cursor: pointer;
+}
+.videoList .card:hover{
+    opacity: 1;
+}
+
+@media only screen and (min-width: 500px) {
+    .container{
+        width: 100%;
+        padding: 10px;
+    }
+}
